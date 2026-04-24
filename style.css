@@ -84,3 +84,63 @@ header {
     }
 
 }
+
+.navbar{
+    background: #333;
+    padding: 15px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    margin: 0 15px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu a:hover{
+    color: #fdd700;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .menu {
+        flex-direction: column;
+        display: none;
+        text-align: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu-icon{
+        display: block;
+        text-align: right;
+    }
+    
+    #menu-toggle:checked + .menu-icon + .menu{
+        display: flex;
+    }
+}
