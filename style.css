@@ -85,12 +85,12 @@ header {
 
 }
 
-.navbar{
+.navbar {
     background: #489dac;
     padding: 15px;
 }
 
-.menu{
+.menu {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -98,28 +98,28 @@ header {
     padding: 0;
 }
 
-.menu li{
+.menu li {
     margin: 0 15px;
 }
 
-.menu a{
+.menu a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: #fdd700;
 }
 
-.menu-icon{
+.menu-icon {
     display: none;
     font-size: 28px;
     color: white;
     cursor: pointer;
 }
 
-#menu-toggle{
+#menu-toggle {
     display: none;
 }
 
@@ -135,12 +135,12 @@ header {
         margin: 10px 0;
     }
 
-    .menu-icon{
+    .menu-icon {
         display: block;
         text-align: right;
     }
-    
-    #menu-toggle:checked + .menu-icon + .menu{
+
+    #menu-toggle:checked+.menu-icon+.menu {
         display: flex;
     }
 }
